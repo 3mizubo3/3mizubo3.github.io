@@ -129,9 +129,9 @@ $(function(){
     return false;
   });
 
-$(window).on("pageshow",function() {
-  if (event.persisted) {
-    window.location.reload();
-  }
-});
+  $(window).on("pageshow",function() {
+    if (event.persisted) {
+      window.location.reload();
+    }
+  });
 });
