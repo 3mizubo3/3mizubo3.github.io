@@ -116,7 +116,7 @@ $(window).on("load",function() {
 });
 
 //-------------Fadeout-------------
-$(function(){
+/*$(function(){
   $('.fadelink').on("click",function() {
     var url = $(this).attr('href');
     if (url != '') {
@@ -127,7 +127,7 @@ $(function(){
       }, 500);
     }
     return false;
-  });
+  });*/
 
 $(window).on("pageshow",function() {
   if (event.persisted) {
