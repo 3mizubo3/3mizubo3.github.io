@@ -106,17 +106,17 @@ $('.icon').click(function(){
 //------------------------------------------------------------------------///
 ///-------------------------------Fadein&out------------------------------------///
 //-------------Fadein-------------
-$(function(){
+/*$(function(){
 $('head').append(
   '<style type="text/css">.fadein{display:none;}</style>'
 );
 $(window).on("load",function() {
   $('body').fadeIn(800).removeClass("fadein");
 });
-});
+});*/
 
 //-------------Fadeout-------------
-/*$(function(){
+$(function(){
   $('.fadelink').on("click",function() {
     var url = $(this).attr('href');
     if (url != '') {
@@ -127,7 +127,7 @@ $(window).on("load",function() {
       }, 500);
     }
     return false;
-  });*/
+  });
 
 $(window).on("pageshow",function() {
   if (event.persisted) {
