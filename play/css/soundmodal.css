@@ -1,11 +1,15 @@
 div#sound_modal-container {
- position:absolute;
- top:0;
- left:0;
- right:0;
- bottom:0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
   z-index: 1000;
   opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #sound_modal-container .sound_modal{
@@ -85,12 +89,19 @@ div#sound_modal-container {
   }
 }
 div#sound_modal-container .sound_modal {
-  width: 100vw;
+  width: 100%;
   height: 100%;
+  min-width: 700px;
   font-weight: 200px;
   position: relative;
   transform: translateY(-100%) rotate(5deg);
   opacity: 1;
+  top: 0;
+  /* left: 0; */
+  /* margin-left: auto; */
+  overflow: hidden;
+  margin-left: :0;
+  text-align: center;
 }
 div#sound_modal-container span.sound_modal-background {
   position:absolute;
@@ -105,10 +116,14 @@ div#sound_modal-container div.sound_modal svg.sound_modal-svg {
   position: absolute;
   top: 0;
   left: 0;
+  /* min-width: 800px; */
+  /* margin-left: auto; */
   height: 100%;
   width: 100%;
-    animation: purun 0.8s linear 0s 1;
-    animation-delay: 1s;
+  /* min-width: 800px; */
+  overflow: hidden;
+  animation: purun 0.8s linear 0s 1;
+  animation-delay: 1s;
 }
 @keyframes purun {
      0%   { transform: scale(1.0, 1.0) translate(0%, 0%); }
@@ -124,7 +139,7 @@ div.soundbutton {
   position: relative;
   text-align: center;
   top: 11%;
-  left: 15%;
+  /*left: 15%;*/
   width: 100%;
 }
 
