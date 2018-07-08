@@ -194,13 +194,34 @@ top: -40px;
 }
 
 /*-----------------ハンバーガーメニューのSP対応----------------- */
+/*@media screen and (max-width: 800px) {*/
+.sp-balloon {
+display: inline-block;
+opacity: 1;
+}
+/*.menu-open:checked .menu-item .s-balloon */
+
+/*}*/
 @media screen and (max-width: 800px) {
-    .s-balloon {
-    opacity: 1;
-    display: inline-block;
-    }
+  .menu-item {
+    color: #666060;
+  }
+  .s-balloon {
+  position: absolute;
+  left: 110%;
+  margin-top:80%;
+  top:-40px;
+  display: inline-block;
+  opacity: 1;
+  padding: 5px;
+  color: #fff;
+  font-family: 'Baloo', cursive;
+  font-size: 20px;
+  text-shadow: 0px 0.05px 0px #ccc;
+  }
 }
 @media screen and (max-width: 480px) {
+
   .menu {
     /*transform: scale(0.8);*/
     top: auto;
@@ -238,23 +259,23 @@ top: -40px;
   }
   .menu-open:checked ~ .menu-item:nth-child(3) {
     transition-duration: 170ms;
-    -webkit-transform: translate3d(0, -70px, 0);
-            transform: translate3d(0, -70px, 0);
+    -webkit-transform: translate3d(0, -80px, 0);
+            transform: translate3d(0, -80px, 0);
   }
   .menu-open:checked ~ .menu-item:nth-child(4) {
     transition-duration: 250ms;
-    -webkit-transform: translate3d(0, -140px, 0);
-            transform: translate3d(0, -140px, 0);
+    -webkit-transform: translate3d(0, -160px, 0);
+            transform: translate3d(0, -160px, 0);
   }
   .menu-open:checked ~ .menu-item:nth-child(5) {
     transition-duration: 330ms;
-    -webkit-transform: translate3d(0, -210px, 0);
-            transform: translate3d(0, -210px, 0);
+    -webkit-transform: translate3d(0, -240px, 0);
+            transform: translate3d(0, -240px, 0);
   }
   .menu-open:checked ~ .menu-item:nth-child(6) {
     transition-duration: 410ms;
-    -webkit-transform: translate3d(0, -280px, 0);
-            transform: translate3d(0, -280px, 0);
+    -webkit-transform: translate3d(0, -320px, 0);
+            transform: translate3d(0, -320px, 0);
   }
 }
 
