@@ -196,10 +196,10 @@ top: -40px;
 /*-----------------ハンバーガーメニューのSP対応----------------- */
 @media screen and (max-width: 480px) {
   .menu {
-    transform: scale(0.8);
+    /*transform: scale(0.8);*/
     top: auto;
-    bottom:5%;
-    left:2%;
+    left: -4%;
+    bottom: -1%;
     /*position: fixed;
     left: 10%;
 
