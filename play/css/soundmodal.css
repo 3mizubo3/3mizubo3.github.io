@@ -97,8 +97,7 @@ div#sound_modal-container .sound_modal {
   transform: translateY(-100%) rotate(5deg);
   opacity: 1;
   top: 0;
-  /* left: 0; */
-  /* margin-left: auto; */
+  margin-left: auto;
   overflow: hidden;
   margin-left: :0;
   text-align: center;
@@ -116,11 +115,9 @@ div#sound_modal-container div.sound_modal svg.sound_modal-svg {
   position: absolute;
   top: 0;
   left: 0;
-  /* min-width: 800px; */
   /* margin-left: auto; */
   height: 100%;
   width: 100%;
-  /* min-width: 800px; */
   overflow: hidden;
   animation: purun 0.8s linear 0s 1;
   animation-delay: 1s;
