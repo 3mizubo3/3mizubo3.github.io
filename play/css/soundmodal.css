@@ -144,7 +144,8 @@ div.soundbutton {
 }
 
 div.soundbutton p {
-  font-size: 80px;
+  font-size: calc( 80px + 1.0vh );
+  margin-top:5vh;
 }
 div.soundbutton div.icon {
     display: inline-block;
@@ -175,4 +176,18 @@ div.icon p.hint {
   line-height: 45px;
   opacity: 0;
   transition: opacity .2s ease .2s;
+}
+
+@media screen and (max-width: 480px) {
+  /*px2rem:0.026*/
+  html{
+    font-size:5vw;
+  }
+  div.soundbutton p {
+    font-size: calc(50px + 1.5vh);
+  }
+  div.soundbutton div.icon {
+    margin: 0 0.78rem;
+  }
+
 }
