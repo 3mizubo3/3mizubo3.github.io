@@ -174,7 +174,11 @@ div.icon p.hint {
   opacity: 0;
   transition: opacity .2s ease .2s;
 }
-
+@media screen and (max-width: 800px) {
+  div.icon p.hint {
+    opacity: 1;
+  }  
+}
 @media screen and (max-width: 480px) {
   /*px2rem:0.026*/
   html{
