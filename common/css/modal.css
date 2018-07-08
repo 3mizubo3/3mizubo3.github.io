@@ -194,12 +194,18 @@ top: -40px;
 }
 
 /*-----------------ハンバーガーメニューのSP対応----------------- */
+@media screen and (max-width: 800px) {
+    .s-balloon {
+    opacity: 1;
+    display: inline-block;
+    }
+}
 @media screen and (max-width: 480px) {
   .menu {
     /*transform: scale(0.8);*/
     top: auto;
-    left: -4%;
-    bottom: -1%;
+    left: 0;
+    bottom: 0;
     /*position: fixed;
     left: 10%;
 
@@ -250,7 +256,6 @@ top: -40px;
     -webkit-transform: translate3d(0, -280px, 0);
             transform: translate3d(0, -280px, 0);
   }
-
 }
 
 /*==========================モーダル===========================*/
