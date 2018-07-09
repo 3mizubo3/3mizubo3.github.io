@@ -99,6 +99,7 @@ canvas{
   position:fixed;
   top:0; left:0; width:100vw; height:100%;
   z-index:-1;
+  overflow:hidden;
 }
 .works_page canvas{
   opacity:0.8;
@@ -190,13 +191,12 @@ div.title-container h2{
       #b0f6fc -1.3px 0 0, #b0f6fc 1.3px 0 0;/*上、下*/
 }
 div.title-container p{
-  margin:;
   font-size: 20px;
   letter-spacing: 1px;
   text-shadow:
       #b0f6fc 1px 1px 0, #b0f6fc -1px -1px 0,/*右下、左上*/
       #b0f6fc -1px 1px 0, #b0f6fc 1px -1px 0,/*右上、左下*/
-      #b0f6fc 0px 1px 0, #b0f6fc  0-1px 0,/*右、左*/
+      #b0f6fc 0px 1px 0, #b0f6fc  0 -1px 0,/*右、左*/
       #b0f6fc -1px 0 0, #b0f6fc 1px 0 0;/*上、下*/
 }
 
