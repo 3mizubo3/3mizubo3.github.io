@@ -204,3 +204,19 @@ function animateCameraPosition(x, y, z){
         camera.lookAt(zeroVector);
     }
 }
+
+function resize(canvas) {
+// ブラウザがcanvasを表示しているサイズを調べる。
+var displayWidth  = canvas.clientWidth;
+var displayHeight = canvas.clientHeight;
+
+// canvasの「描画バッファーのサイズ」と「表示サイズ」が異なるかどうか確認する。
+if (canvas.width  != displayWidth ||
+	canvas.height != displayHeight) {
+
+// サイズが違っていたら、描画バッファーのサイズを
+// 表示サイズと同じサイズに合わせる。
+canvas.width  = displayWidth;
+canvas.height = displayHeight;
+}
+}
