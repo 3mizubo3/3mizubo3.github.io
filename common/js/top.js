@@ -5,11 +5,11 @@ $(function() {
   //setTimeout('ani1()', 2400);
   setTimeout('ani2()', 3000); //1秒後に実行
 });
-/*function ani1() {
+function ani1() {
   var adScript = document.createElement("script");
   adScript.src = "top/js/top_canvas.js";
   document.getElementById('canvas').appendChild(adScript);//アニメーション用のクラスを追加
-}*/
+}
 
 function ani2() {
   $('.title-container').addClass('title_anime');
