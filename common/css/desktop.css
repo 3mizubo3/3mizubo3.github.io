@@ -17,10 +17,6 @@ html{
 }
 /*-----body-------*/
 /*-----ページ遷移が滑らかに行くよう白色に遷移するようアニメーション-------*/
-html{
-  overflow: hidden;
-  width: 100vw;
-}
 body {
     position: relative;
     width: 100%;
