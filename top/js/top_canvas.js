@@ -77,10 +77,12 @@ function init() {
 //---------------------------------------------------------------------------------------------------------------
 // 画面のリサイズ？
 function onWindowResize() {
-  windowHalfX = window.innerWidth / 2;
-  windowHalfY = window.innerHeight / 2;
-
-  camera.aspect = window.innerWidth / window.innerHeight;
+  //windowHalfX = window.innerWidth / 2;
+  //windowHalfY = window.innerHeight / 2;
+  windowHalfX = canvas.clientWidth / 2;
+  windowHalfY = canvas.clientHeight / 2;
+  //camera.aspect = window.innerWidth / window.innerHeight;
+  camera.aspect = canvas.clientWidth / canvas.clientHeight;
   camera.updateProjectionMatrix();
   renderer.setSize( canvas.clientWidth, canvas.clientHeight);
   //renderer.setSize( window.innerWidth, window.innerHeight );
