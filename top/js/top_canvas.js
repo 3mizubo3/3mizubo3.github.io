@@ -117,13 +117,13 @@ function animate() {
   render();
 }
 
-// ？？レンダーのなんか　カメラを正面に向ける
+//レンダー　位置と回転を求める
 function render() {
   camera.position.x += ( mouseX - camera.position.x ) * 0.05;
   camera.position.y += ( mouseY - camera.position.y ) * 0.05;
   camera.lookAt( scene.position );
 
-  // ？？回転の何か、、、
+  // 回転
   var currentSeconds = Date.now();
   group.rotation.x = Math.sin( currentSeconds * 0.0005 ) * 0.8;
   group.rotation.y = Math.sin( currentSeconds * 0.0003 ) * 0.8;
