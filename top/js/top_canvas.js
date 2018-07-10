@@ -1,5 +1,5 @@
 //初期設定
-var container;
+var container,canvas;
 var camera, scene, renderer, group, particle;
 var mouseX = 0, mouseY = 0;
 
@@ -14,9 +14,10 @@ animate();
 //init関数--------------------------------------------------------------------------------------
 // html上に描画領域を作成
 function init() {
-  container = document.createElement( 'div' );
-  //document.body.appendChild( container );
-  document.getElementById('canvas').appendChild(container);
+  //container = document.createElement( 'div' );
+  //document.getElementById('canvas').appendChild(container);
+
+  canvas=document.getElementById('canvas');
   //container = document.getElementById('canvas');
   // カメラ作成
   camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 3000 );
@@ -61,14 +62,16 @@ function init() {
   renderer = new THREE.CanvasRenderer();
   renderer.setClearColor( 0x000000,0 );
   renderer.setPixelRatio( window.devicePixelRatio );
-  renderer.setSize( window.innerWidth, window.innerHeight );
-  container.appendChild( renderer.domElement );
+  //renderer.setSize( window.innerWidth, window.innerHeight );
+  //container.appendChild( renderer.domElement );
+
+  renderer.setSize( canvas.clientWidth, canvas.clientHeight);
+  canvas.appendChild(renderer.domElement );
 
   document.addEventListener( 'mousemove', onDocumentMouseMove, false );
   document.addEventListener( 'touchstart', onDocumentTouchStart, false );
   document.addEventListener( 'touchmove', onDocumentTouchMove, false );
   window.addEventListener( 'resize', onWindowResize, false );
-
 
 }
 //---------------------------------------------------------------------------------------------------------------
@@ -79,7 +82,8 @@ function onWindowResize() {
 
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
-  renderer.setSize( window.innerWidth, window.innerHeight );
+  renderer.setSize( canvas.clientWidth, canvas.clientHeight);
+  //renderer.setSize( window.innerWidth, window.innerHeight );
 }
 
 // マウスのイベント
