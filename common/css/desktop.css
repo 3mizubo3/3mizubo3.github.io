@@ -331,7 +331,7 @@ div.title-play-container h2 {
 header {
     position: fixed;
     display: block;
-    top: 0px;
+    top: 7%;
     z-index:50;
    transition: .3s;
    width: 100%;
@@ -339,7 +339,7 @@ header {
 header h1 {
     font-size: 110px;
     letter-spacing: 5px;
-    margin-top:3%;
+    /*margin-top:3%;*/
     margin-right:4%;
     text-align:right;
     transition: .3s;
@@ -362,156 +362,37 @@ nav .worksworks{
 }
 
 /*----------video-----------*/
-.caroussel{
+div.caroussel{
   position: realative;
-  transform: translateY(6%);
+  margin-top:calc( 120px + 3.0vh );
   width: 100%;
-}
-/*親要素*/
-figure.snip1384 {
-  font-family: 'Raleway', Arial, sans-serif;
-  position: relative;
-  overflow: hidden;
-  margin: 10px auto;
-  min-width: 300px;
-  max-width: 700px;
-  width: 100%;
-  color: #ffffff;
-  text-align: center;
-  font-size: 50px;
-  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-figure.snip1384 h3{
-  font-family: 'Baloo', cursive;
-}
-/*親要素が囲む全部にアニメーションをきかせる*/
-figure.snip1384 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;/*ボックスの幅にpaddingやborderを含める*/
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-/*ホバー前の画像のデフォルト仕様*/
-figure.snip1384 video {
-  max-width: 100%;
-  vertical-align: top;
-  left: 0;
-  right: 0;
-}
-/*ホバーあとの文字キャプションのデフォルト仕様*/
-figure.snip1384:after,
-figure.snip1384 figcaption {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-/*ホバー前の黒背景のデフォルト仕様、デフォルトなのでopacity=0で非表示*/
-figure.snip1384:after {
-  content: '';
-  background-color: rgba(255, 255,255, 0.5);
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-  opacity: 0;
-}
-/*ホバー前の文字キャプションのデフォルト使用*/
-figure.snip1384 figcaption {
-  z-index: 1;
-  padding: 40px;
-}
-/*ホバー前の文字とリンクのデフォルト仕様*/
-figure.snip1384 h3,
-figure.snip1384 .links {
-  width: 100%;
-  margin: 5px 0;
-  padding: 0;
-}
-/*ホバー前のh3文字のデフォルト仕様　opacity=0で非表示*/
-figure.snip1384 h3 {
-  line-height: 1.1em;
-  font-weight: 400;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  opacity: 0;
-  margin-top:5%;
-}
-/*ホバー前のp文字のデフォルト仕様　opacity=0で非表示*/
-figure.snip1384 p {
-  font-size: 0.6em;
-  font-weight: 300;
-  letter-spacing: 1px;
-  opacity: 0;
-  margin-top: 8%;
-  -webkit-transform: translateY(40px);
-  transform: translateY(40px);
-}
-/*ホバー前のアイコンのデフォルト仕様　opacity=0で非表示*/
-figure.snip1384 i {
-  position: absolute;
-  top:60%;
-  right: 7%;
-  padding: 20px 25px;
-  font-size: 80px;
-  opacity: 0;
-}
-/*ホバー前のaタグのデフォルト仕様*/
-figure.snip1384 a {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-}
-/*ホバーあとの画像の仕様*/
-figure.snip1384:hover video {
-  zoom: 1;
-  filter: alpha(opacity=50);
-  -webkit-opacity: 0.5;
-  opacity: 0.5;
-}
-/*ホバーあとの親要素の仕様*/
-figure.snip1384:hover:after {
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-}
-/*ホバーあとのすべてのopacityを1にして表示*/
-figure.snip1384:hover h3,
-figure.snip1384:hover p,
-figure.snip1384:hover i {
-  -webkit-transform: translate(0px, 0px);
-  transform: translate(0px, 0px);
-  opacity: 1;
-}
-
-/*----------video-----------*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800;);
-.snip1516 {
+figure.snip1516 {
   font-family: 'Open Sans', sans-serif;
   position: relative;
   overflow: hidden;
-  margin: 5% auto;
-  min-width: 300px;
+  margin: 8% 10%;
+  /*min-width: 300px;*/
   max-width: 650px;
-  width: 100%;
+  /*width: 100%;*/
   text-align: center;
   font-size: 16px;
   background-color: #fff;
   color: #ffffff;
 }
-.snip1516 * {
+figure.snip1516 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.45s ease;
   transition: all 0.45s ease;
 }
-.snip1516 video {
+figure.snip1516 video {
   vertical-align: top;
   left: 0;
   right: 0;
@@ -519,7 +400,7 @@ figure.snip1384:hover i {
   max-width: 100%;
   backface-visibility: hidden;
 }
-.snip1516 figcaption {
+figure.snip1516 figcaption {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -535,7 +416,7 @@ figure.snip1384:hover i {
   -webkit-transform: translateY(-75%) rotate(360deg);
   transform: translateY(-75%) rotate(360deg);
 }
-.snip1516 figcaption:before {
+figure.snip1516 figcaption:before {
   content: '';
   background-color: #ccc;
   position: absolute;
@@ -548,18 +429,18 @@ figure.snip1384:hover i {
   transform: translate(-50%, -50%);
   z-index: -1;
 }
-.snip1516 h3 {
+figure.snip1516 h3 {
   text-transform: uppercase;
   font-size: 0.9em;
   font-weight: 400;
   margin: 0;
   letter-spacing: 1px;
 }
-.snip1516 h3 span {
+figure.snip1516 h3 span {
   display: block;
   font-weight: 800;
 }
-.snip1516 a {
+figure.snip1516 a {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -567,12 +448,12 @@ figure.snip1384:hover i {
   right: 0;
   z-index: 1;
 }
-.snip1516:hover > video,
-.snip1516.hover > video {
+figure.snip1516:hover > video,
+figure.snip1516.hover > video {
   opacity: 0.3;
 }
-.snip1516:hover figcaption,
-.snip1516.hover figcaption {
+figure.snip1516:hover figcaption,
+figure.snip1516.hover figcaption {
   -webkit-transform: translate(0px) rotate(0deg);
   transform: translate(0px) rotate(0deg);
   opacity: 1;
