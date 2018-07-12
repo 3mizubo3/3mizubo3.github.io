@@ -383,8 +383,12 @@ figure.snip1516 {
   /*width: 100%;*/
   text-align: center;
   font-size: 16px;
-  background-color: #fff;
+  /*background-color: #fff;*/
   color: #ffffff;
+  background-image: url(../../works/img/works1.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 figure.snip1516 * {
   -webkit-box-sizing: border-box;
@@ -393,6 +397,7 @@ figure.snip1516 * {
   transition: all 0.45s ease;
 }
 figure.snip1516 video {
+  display: none;
   vertical-align: top;
   left: 0;
   right: 0;
@@ -400,6 +405,18 @@ figure.snip1516 video {
   max-width: 100%;
   backface-visibility: hidden;
 }
+@media screen and (min-width: 801px) {
+  figure.snip1516 video{
+      display: block;
+  }
+}
+@media screen and (max-width: 800px) {
+  figure.snip1516{
+    width: calc(18 * 5vw);
+        height: calc(10 * 5vw);
+  }
+}
+
 figure.snip1516 figcaption {
   position: absolute;
   top: 0;
