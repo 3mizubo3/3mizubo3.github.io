@@ -84,28 +84,28 @@
 		<div class="caroussel">
 
 			<figure class="snip1516">
-				<video id="videoone" loop="true" poster="img/works1.png" autoplay muted src="video/works1.mp4" type="video/mp4"></video>
+				<video loop="true" preload="none" poster="img/works1.png" src="video/works1.mp4" type="video/mp4"></video>
 				<figcaption>
 					<h3>Rotate <span>RotateRotateRotate</span></h3>
 				</figcaption>
 				<a href="works/works1/index.html"></a>
 			</figure>
 			<figure class="snip1516 fuwat">
-				<video id="videotwo" loop="true" poster="works/works4/img/yoko.png" src="" type=""></video>
+				<video loop="true" poster="works/works4/img/yoko.png" src="" type=""></video>
 				<figcaption>
 					<h3>Design <span>Poster Design for DRONE TEAM</span></h3>
 				</figcaption>
 				<a href="works/works4/index.html"></a>
 			</figure>
 		<figure class="snip1516 fuwat">
-			<video id="videotwo" loop="true" poster="img/works2.png" autoplay muted src="video/works2.mov" type="video/mp4"></video>
+			<video loop="true" preload="none" poster="img/works2.png" src="video/works2.mov" type="video/mp4"></video>
 			<figcaption>
 				<h3>Random <span>RandomRandom</span></h3>
 			</figcaption>
 			<a href="works/works2/index.html"></a>
 		</figure>
 		<figure class="snip1516 fuwat">
-			<video id="videotwo" loop="true" poster="img/works3.png" autoplay muted src="video/works3.mov" type="video/mp4"></video>
+			<video loop="true" preload="none" poster="img/works3.png" src="video/works3.mov" type="video/mp4"></video>
 			<figcaption>
 				<h3>Random <span>RandomRandom</span></h3>
 			</figcaption>
@@ -113,14 +113,14 @@
 		</figure>
 
 		<figure class="snip1516 fuwat">
-			<video id="videotwo" loop="true" poster="img/works1.png" autoplay muted src="video/works4.mp4" type="video/mp4"></video>
+			<video loop="true" preload="none" poster="img/works1.png" src="video/works4.mp4" type="video/mp4"></video>
 			<figcaption>
 				<h3>Random <span>RandomRandom</span></h3>
 			</figcaption>
 			<a href="works/works5/index.html"></a>
 		</figure>
 		<figure class="snip1516 fuwat">
-			<video id="videotwo" loop="true" autoplay muted poster="img/works1.png" src="video/works4.mp4" type="video/mp4"></video>
+			<video loop="true" preload="none" poster="img/works1.png" src="video/works4.mp4" type="video/mp4"></video>
 			<figcaption>
 				<h3>Random <span>RandomRandom</span></h3>
 			</figcaption>
@@ -128,9 +128,52 @@
 		</figure>
 	</div>
 
-	<!--<script>
-    $('video').remove();
-</script>-->
+	<script>
+	$(function() {
+	//$(window).resize(function(){
+	    var w = $(window).width();
+	    var x = 800;
+			var video = $('video');
+			console.log( "プロパティの値", video.length);
+	    if (w <= x) {
+	        // スマホ時の処理
+	    } else {
+	        getProperty ();
+					video[0].play();// ＰＣ時の処理
+					$(window).scroll(function () {
+						for (  var i = 0;  i < video.length;  i++  ){
+							if (isScrolledIntoView(video[i]) == true) {
+								video[i].play();
+							} else {
+								video[i].pause();
+							}
+						}
+					});
+
+	    }
+	//});
+	});
+
+function isScrolledIntoView(elem) {
+		var docViewTop = $(window).scrollTop();
+		var docViewBottom = docViewTop + $(window).height();
+		var elemTop = $(elem).offset().top +$(elem).height();
+		var elemBottom = elemTop - $(elem).height();
+		return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+	}
+
+// プロパティを取得
+function getProperty () {
+	// preloadを取得
+	//var element = document.getElementById( "videoone" ) ;
+	//var element = document.getElementsByClassName( "videoone" ) ;
+	var element = document.getElementsByTagName('video');
+	for (  var i = 0;  i < element.length;  i++  ){
+	element[i].preload = "auto" ;
+	//element[i].play() ;
+	}
+}
+	</script>
 
 	<!-- #share-->
 	<div id="prf-container-works" class="prf-container">
