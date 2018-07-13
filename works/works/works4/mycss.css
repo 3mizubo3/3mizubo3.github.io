@@ -1,0 +1,68 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  display: flex;
+  list-style: none;
+   flex-wrap: wrap; /* 折り返し */
+   justify-content: space-evenly;
+}
+
+li {
+
+  margin: 5vw;
+ /* padding: 20px;*/
+  border-radius: 5px;
+  line-hight: 1;
+  color: #fff;
+  background: #aaffaa;
+  background-repeat:no-repeat;
+  background-size:100% auto;
+  background-position: 0 0;
+}
+
+/*li img{
+max-width:400px;
+width:100%;
+height:100%;}*/
+
+li:first-child {
+  background-image: url(img/yoko.png);
+  width:636px;
+  height:447px;
+}
+li:nth-child(2) {
+  background-image: url(img/tate.png);
+  width:447px;
+  height:635px;
+}
+
+@media(max-width: 800px){
+	html{
+	font-size:5vw;
+	}
+
+	li:first-child {
+	min-width:200px;
+	  width:13rem;
+	  height:7rem;
+	}
+	li:nth-child(2) {
+	min-width:200px;
+	  width:15rem;
+	  height:15rem;
+	}
+}
+
+/*li p {
+  margin: 0;
+  padding: 0;
+}*/
