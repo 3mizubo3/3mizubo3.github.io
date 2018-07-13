@@ -61,6 +61,52 @@ $(function() {
   });
 });
 
+//-----------------------------------------------------
+//ビデオのロード処理.spではメディア読み込みせず、pcでのみ読み込み。
+$(function() {
+//$(window).resize(function(){
+    var w = $(window).width();
+    var x = 800;
+    var video = $('video');
+    //console.log( "プロパティの値", video.length);
+
+    if (w <= x) {
+        // スマホ時の処理
+    } else {
+        getProperty ();
+        video[0].play();// ＰＣ時の処理
+        $(window).scroll(function () {
+          for (  var i = 0;  i < video.length;  i++  ){
+            if (isScrolledIntoView(video[i]) == true) {
+              video[i].play();
+            } else {
+              video[i].pause();
+            }
+          }
+        });
+    }
+});
+//scrollでvideoをplay.scrolloutでpause
+function isScrolledIntoView(elem) {
+  var docViewTop = $(window).scrollTop();
+  var docViewBottom = docViewTop + $(window).height();
+  var elemTop = $(elem).offset().top +$(elem).height();
+  var elemBottom = elemTop - $(elem).height();
+  return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+// pcの時、preloadをautoにする
+function getProperty () {
+// preloadを取得
+//var element = document.getElementById( "videoone" ) ;
+//var element = document.getElementsByClassName( "videoone" ) ;
+var element = document.getElementsByTagName('video');
+for (  var i = 0;  i < element.length;  i++  ){
+element[i].preload = "auto" ;
+//element[i].play() ;
+}
+}
+//-----------------------------------------------------
 //videoスクロールふわっと表示
 $(function() {
 $(document).ready(function(){
@@ -79,22 +125,7 @@ $(document).ready(function(){
   });
 });
 });
-// 要素の取得
-/*var videoone = document.getElementById('videoone');
-window.onload = function(){
-    videoone.defaultPlaybackRate = 0.3;
-    videoone.load();
-}
-var videotwo = document.getElementById('videotwo');
-window.onload = function(){
-    videotwo.defaultPlaybackRate = 0.5;
-    videotwo.load();
-}
-var videothree = document.getElementById('videothree');
-window.onload = function(){
-    videothree.defaultPlaybackRate = 0.5;
-    videothree.load();
-}*/
+
 
 //------------------------------------------------------------------------///
 ///-------------------------------play------------------------------------///
