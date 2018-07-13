@@ -35,7 +35,7 @@ body.play_page {
     animation: playpage 1.00s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
   }
 body.works_page {
-    /*background-color: #070777;*/
+    background-color: #070777;
     animation: workspage 2.00s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
   }
 body.desktop.fadeout {
