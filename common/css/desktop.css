@@ -406,6 +406,10 @@ figure.snip1516 video {
   backface-visibility: hidden;
 }
 @media screen and (min-width: 801px) {
+  figure.snip1516 {
+      background-image: none;
+      background-color: #fff;       
+  }
   figure.snip1516 video{
       display: block;
   }
