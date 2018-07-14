@@ -368,10 +368,11 @@ nav .worksworks{
   z-index: 2000;
 }
 
+/*-----------------------------------*/
 /*----------video-----------*/
 div.caroussel{
   position: relative;
-    transform: translateY(calc(100px + 3.0vh));
+  transform: translateY(calc(100px + 3.0vh));
   /*margin-top:calc( 120px + 3.0vh );*/
   width: 100%;
   display: flex;
@@ -393,11 +394,11 @@ figure.snip1516 {
   font-size: 16px;
   /*background-color: #fff;*/
   color: #ffffff;
-  background-image: url(../../works/img/works1.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+/*---forsp--video切って背景画像しく--*/
 figure.snip1516:first-child{
   background-image: url(../../works/img/works1.png);
 }
@@ -432,8 +433,9 @@ figure.snip1516 video {
   max-width: 100%;
   backface-visibility: hidden;
 }
+/*----for sp---*/
 @media screen and (min-width: 801px) {
-  figure.snip1516 {
+  figure.snip1516:nth-child(-n+6) {
       background-image: none;
       background-color: #fff;
   }
@@ -447,7 +449,7 @@ figure.snip1516 video {
         height: calc(12.6 * 5vw);
   }
 }
-
+/*------*/
 figure.snip1516 figcaption {
   position: absolute;
   top: 0;
@@ -506,6 +508,7 @@ figure.snip1516.hover figcaption {
   transform: translate(0px) rotate(0deg);
   opacity: 1;
 }
+/*----for sp---*/
 @media screen and (max-width: 800px) {
   figure.snip1516 figcaption {
     opacity: 1;
