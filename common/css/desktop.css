@@ -344,6 +344,13 @@ header h1 {
     text-align:right;
     transition: .3s;
 }
+@media screen and (max-width: 800px) {
+  header h1 {
+      font-size: calc( 70px + 5.0vw );
+      letter-spacing: 0.1vw;
+  }
+}
+
 
 .active {
   height: 80px;
