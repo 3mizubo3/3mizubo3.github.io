@@ -8,31 +8,16 @@
 		<title>Mizuho PORTFOLIO SITE</title>
 
 		<!--css	-->
-			<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 			<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Open+Sans|Baloo|Fredoka+One" rel="stylesheet">
 			<link rel="stylesheet" href="../../../common/css/reset.css">
 			<link rel="stylesheet" href="../../../common/css/desktop.css">
 			<link rel="stylesheet" href="../../../common/css/modal.css">
-			<link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
-			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
 
 <!---JS--->
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js"></script>
-		<!--three.js-->
-		<script type="text/javascript" src="../../../common/js/three.min.js"></script>
-		<script type="text/javascript" src="../../../common/js/Projector.js"></script>
-		<script type="text/javascript" src="../../../common/js/CanvasRenderer.js"></script>
-		<script type="text/javascript" src="../../../common/js/modernizr-custom.min.js"></script>
-		<script type="text/javascript" src="../../../common/js/OrbitControls.js"></script>
-		<script type="text/javascript" src="../../../top/js/top.js" charset="utf-8"></script>
 		<!--p5.js-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.sound.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
-		<script src="js/p5.play.js"></script>
 		<!-------->
 
 		<!--作品用------>
@@ -41,24 +26,26 @@
 
 <body class=" worksworks fadein">
 
-	<script src ="myjavascript.js"></script>
-	<div id="wrapper">
-	  <div class="container">
 	    <div id="canvas-container"></div>
-	  </div>
-	</div>
+			<script src ="myjavascript.js"></script>
+
 		<div class = "main">
 			<!-- #menu-->
 			<nav class="menu">
-			  <input type="checkbox" href="../../works.html" class="menu-open" name="menu-open" id="menu-open"/>
+			  <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
 			  <label class="menu-open-button" for="menu-open">
 			    <span class="hamburger hamburger-1 worksham"></span>
 			    <span class="hamburger hamburger-2 worksham"></span>
 			    <span class="hamburger hamburger-3 worksham"></span>
 				</label>
-				<a class="worksworks" href="../../works.html"></a>
 			</nav>
-
+		<script>
+			$(function() {
+			    $('.menu-open').click(function() {
+			        location.href = "../../works.html";
+			    });
+			});
+		</script>
 
 			<!-- #title-->
 			<div class= "title-play-container title-worksworks">
@@ -94,9 +81,6 @@
 	      </filter>
 	    </defs>
 	</svg>
-
-	<!-- modal -->
-		<script type="text/javascript" src="../common/js/modal.js"></script>
 
 </body>
 </html>
