@@ -204,9 +204,25 @@ div.title-container p{
       #b0f6fc 0px 1px 0, #b0f6fc  0 -1px 0,/*右、左*/
       #b0f6fc -1px 0 0, #b0f6fc 1px 0 0;/*上、下*/
 }
+div.play-skip p{
+  margin:30px auto 0 auto;
+  color:#b0f6fc;
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-shadow:
+      #fff 1px 1px 0, #fff -1px -1px 0,/*右下、左上*/
+      #fff -1px 1px 0, #fff 1px -1px 0,/*右上、左下*/
+      #fff 0px 1px 0, #fff  0 -1px 0,/*右、左*/
+      #fff -1px 0 0, #fff 1px 0 0;/*上、下*/
+  transition: color .3s ease-in-out;
+}
+div.play-skip p:hover {
+  color: #fff;
+  text-shadow:1px 1px 2px #b0f6fc;
+}
 
 /*---------タイトルのアニメーション-----------*/
-.title-container, #prf-container-top, .playbutton {
+.title-container, #prf-container-top, .playbutton,.play-skip {
   opacity: 0;
 }
 
