@@ -398,6 +398,25 @@ figure.snip1516 {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+figure.snip1516:first-child{
+  background-image: url(../../works/img/works1.png);
+}
+figure.snip1516:nth-child(2){
+  background-image: url(../../works/works/works4/img/yoko.png);
+}
+figure.snip1516:nth-child(3){
+  background-image: url(../../works/img/works2.png);
+}
+figure.snip1516:nth-child(4){
+  background-image: url(../../works/img/works3.png);
+}
+figure.snip1516:nth-child(5){
+  background-image: url(../../works/img/works1.png);
+}
+figure.snip1516:nth-child(6){
+  background-image: url(../../works/img/works1.png);
+}
+
 figure.snip1516 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
