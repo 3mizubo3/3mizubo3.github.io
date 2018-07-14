@@ -66,9 +66,15 @@ $(function() {
 $(function() {
 //$(window).resize(function(){
     var w = $(window).width();
+    var h = $(window).height();
     var x = 800;
     var video = $('video');
-    //console.log( "プロパティの値", video.length);
+
+    //メディアサイズが縦の方が長い時ファーストビューで2番目まで表示
+    if (w <= h) {
+    } else {
+      $('#second').addClass('fuwat');
+    }
 
     if (w <= x) {
         // スマホ時の処理
