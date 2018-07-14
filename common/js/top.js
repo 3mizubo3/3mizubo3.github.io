@@ -14,7 +14,8 @@ function ani1() {
 function ani2() {
   $('.title-container').addClass('title_anime');
     $('#prf-container-top').addClass('title_anime');
-      $('.playbutton').addClass('title_anime'); //アニメーション用のクラスを追加
+    $('.playbutton').addClass('title_anime');
+    $('.play-skip').addClass('title_anime'); //アニメーション用のクラスを追加
 }
 
 ///------------------------------------------------------------------------///
