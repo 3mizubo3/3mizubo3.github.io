@@ -281,7 +281,7 @@ div.playbutton span {
 div.title-play-container{
   position: fixed;
   display: block;
-  top: 0%;
+  top: 5%;
   right: 3%;
   text-align: center;
 }
@@ -289,14 +289,14 @@ div.title-play-container{
 div.title-play-container h1 {
     font-size: 120px;
     letter-spacing: 5px;
-    margin:30px auto 0 auto;
+    margin:0 auto 0 auto;
 }
 div.title-play-container h2 {
     margin-top: -15px;
     font-size: 15px;
     letter-spacing: 1px;
 }
-#prf-container-play {
+.prf-container-play {
   position: fixed;
   right:5%;
   bottom:5%;
@@ -350,7 +350,6 @@ header h1 {
       letter-spacing: 0.1vw;
   }
 }
-
 
 .active {
   height: 80px;
@@ -433,7 +432,7 @@ figure.snip1516 video {
   max-width: 100%;
   backface-visibility: hidden;
 }
-/*----for sp---*/
+/*----video for sp---*/
 @media screen and (min-width: 801px) {
   figure.snip1516:nth-child(-n+6) {
       background-image: none;
@@ -543,4 +542,19 @@ figure.snip1516.hover figcaption {
 @keyframes fuwatAnimeAnime {
  0% { opacity: 1;}
  100% { opacity: 0;}
+}
+
+/*-----------各workspageの使用------------*/
+div.title-worksworks{
+  color:RGB(150,150,150);
+}
+@media screen and (max-width: 800px) {
+  div.title-worksworks h1 {
+      font-size: calc( 70px + 5.0vw );
+      letter-spacing: 0.1vw;
+  }
+  div.title-worksworks h2 {
+      font-size: calc( 10px + 1.0vw );
+      letter-spacing: 0.1vw;
+  }
 }
