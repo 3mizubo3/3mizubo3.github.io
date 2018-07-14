@@ -444,7 +444,7 @@ figure.snip1516 video {
 @media screen and (max-width: 800px) {
   figure.snip1516{
     width: calc(18 * 5vw);
-        height: calc(10 * 5vw);
+        height: calc(12.6 * 5vw);
   }
 }
 
