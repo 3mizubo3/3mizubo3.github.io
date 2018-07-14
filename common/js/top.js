@@ -54,7 +54,7 @@ $(function() {
 
   $win.on('load scroll', function() {
     var value = $(this).scrollTop();
-    if ( value > 100 ) {
+    if ( value > 10 ) {
       $header.addClass(animationClass);
     } else {
       $header.removeClass(animationClass);
