@@ -1415,7 +1415,7 @@ section.introarea{
 background-color:#fffbea;
 }
 section.introarea>div.inner{
-padding: 0 0.8rem 2.0rem 0.8rem;
+padding: 0 0 0rem 0;
 color:#333333;
 text-align: center;
 }
@@ -1458,7 +1458,7 @@ padding: 0 0.8rem 0 0.8rem;
 }*/
 section.introarea div.introimage{
 	margin: 10rem auto 0 auto;
-  width: 20rem;
+  /*width: 20rem;*/
   /* width: 500px; */
   height: 15rem;
   /* border-radius: 7px; */
@@ -1497,12 +1497,12 @@ height: 14.602rem;
 vertical-align: top;
 }*/
 
-/*������������������SPOT������������������*/
+/*������������������INFOMATION������������������*/
 section.infoarea{
- background-color:#fffbea;
+ background-color:#fff3c1;;
 }
 section.infoarea>div.inner{
-padding: 0 0 1.5rem 0;
+padding: 2.5rem 0 1.5rem 0;
 }
 section.infoarea h2{
  padding: 2.5rem 0 0.5rem 0;
@@ -1553,7 +1553,7 @@ whit-space: nowrap;
 section.infoarea div.infobox div.itembox{
 position: relative;
 width: 16.0rem;
-padding: 0 0 2.0rem 0;
+padding: 0 0 1.0rem 0;
 margin: 0 auto 0 auto;
 }
 
@@ -1604,18 +1604,19 @@ font-weight:bold;
 }*/
 
 section.infoarea div.infobox div.caption{
-padding: 0 0 2.086rem 0;
+padding: 1.0rem 0 0 0;
 color:#333333;
 }
 section.infoarea div.infobox div.caption h3{
-padding: 0 0 2.086rem 0;
+padding: 0 0 1.5rem 0;
 line-height:1.4;/*�s�̍���*/
-font-size:1.2rem;
+font-size: 1.0rem;
+letter-spacing: 0.1rem;
 text-align: center;
 font-family: "Hiragino Maru Gothic ProN";
 }
 section.infoarea div.infobox div.caption p{
-font-size:1.2rem;
+font-size:0.9rem;
 line-height:1.7;
 }
 /*section.infoarea div.infobox div.intro div.itembox div.caption dl{
@@ -1646,25 +1647,27 @@ background-repeat: no-repeat;background-position: 0 0;background-size: 100% auto
 
 section.infoarea div.infobox div.access{
 position: relative;
-width: 16.948rem;
-padding: 1.043rem 0.913rem 1.695rem 0.913rem;
+width: 17.0rem;
+  padding: 1.0rem 0.4rem 1.7rem 0.4rem;
 /*border-style: solid;
 border-width:2px;
 border-color:#57b5ed;*/
 margin: 0 auto 0 auto;
 }
 section.infoarea div.infobox  div.access h3{
- padding: 0 0 0.521rem 0;
+ padding: 0 0 0.7rem 0;
  text-align: center;
 }
 section.infoarea div.infobox  div.access h3 p{
-display:inline-block;
-position:relative;
-width: 15.123rem;
-height: 1.721rem;
-/*padding: 0 0 0 7.021rem;*/
-font-size: 0.782rem;
-white-space: nowrap;
+	display: inline-block;
+  position: relative;
+  width: 15.0rem;
+  height: 1.7rem;
+
+  /* padding: 0 0 0 7.021rem; */
+  font-size: 1.0rem;
+	letter-spacing: 0.1rem;
+  white-space: nowrap;
 /*border-style: solid;
 border-width: 0 0 2px 0;
 border-color: #57b5ed;*/
@@ -1683,9 +1686,9 @@ background-position: 0 0;
 background-size: 100% auto;
 }*/
 section.infoarea div.infobox div.access div.note{
-padding: 0 0 0.782rem 0;
+padding: 0 0 1.2rem 0;
 line-height: 1.7;
-font-size: 0.652rem;
+font-size: 0.9rem;
 }
 section.infoarea div.infobox div.access div.note p span{
 color: #333333;
@@ -1694,44 +1697,18 @@ section.infoarea div.infobox div.access div.map{
 text-align: center;
 }
 section.infoarea div.infobox div.access div.map a{
-display: inline-block;
-width: 13.819rem;
-height: 13.819rem;
-vertical-align: top;
-background-image:url(image/pc/object_spot_map_01.png);
-background-repeat: no-repeat;background-position: 0 0;background-size: 100% auto;
+	display: inline-block;
+  width: 14.0rem;
+  height: 10.0rem;
+  vertical-align: top;
+  background-image: url(image/pc/object_spot_map_01.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
 }
 section.infoarea div.infobox div.more{
-width: 16.166rem;
+width: 16.0rem;
 margin: 0 auto 0 auto;
-}
-section.infoarea div.infobox div.more div.fig{
-position:absolute;
-left:0;
-/*top:70px;
-/*section.infoarea div.infobox div.more div.map a*/
-width: 13.819rem;
-height: 13.819rem;
-/*position:absolute;
-left:0;
-top:0;*/
-border-radius: 7px;
-background-image:url(image/pc/photo_spot_mainimage_02.png);
-background-repeat: no-repeat;
-background-position: 0 0;
-background-size:auto auto;
-/*transition-property:opacity;
-transition-duration:1s;*/
-}
-
-section.infoarea div.infobox div.more div.note{
-	position: absolute;
-  /*padding: 100px 0 0 50px;*/
-  line-height: 1.7;
-  /*letter-spacing: 3px;*/
-  font-size: 1.2rem;
-  /*left: 600px;*/
-	/*top:30px;*/
 }
 section.infoarea div.infobox div.more h3{
 	text-align: center;
@@ -1744,12 +1721,43 @@ position:relative;
 /*height:50px;*/
 /*line-height:45px;*/
 padding: 0;
-font-size:1.2rem;
+font-size:1.0rem;
+letter-spacing: 0.1rem;
 /*letter-spacing: 3px;*/
 /*border-style:solid;
 border-width:0 0 2px 0;
 border-color:#57b5ed;*/
 }
+section.infoarea div.infobox div.more div.fig{
+position:absolute;
+left:0;
+/*top:70px;
+/*section.infoarea div.infobox div.more div.map a*/
+width: 14.0rem;
+height: 14.0rem;
+/*position:absolute;
+left:0;
+top:0;*/
+border-radius: 7px;
+background-image:url(image/pc/photo_spot_mainimage_02.png);
+background-repeat: no-repeat;
+background-position: 0 0;
+background-size:auto auto;
+display:none;
+/*transition-property:opacity;
+transition-duration:1s;*/
+}
+
+section.infoarea div.infobox div.more div.note{
+  /* position: absolute; */
+  padding: 0.7rem 0 0 1.4rem;
+  line-height: 1.7;
+  /* letter-spacing: 3px; */
+  font-size: 0.9rem;
+  /* left: 600px; */
+  /* top: 30px; */
+	}
+
 section.infoarea div.infobox div.more div.note p{
 
 }
@@ -1780,12 +1788,14 @@ background-size: 100% auto;
 
 /*������������������Banner&Booking&Footer������������������*/
 section.gallaryarea{
+	background-color:#fffbea;
 }
 section.gallaryarea>div.inner{
 /*position: static;*/
+padding:0.5rem 0 0 0;
 }
 section.gallaryarea h2{
-/*padding: 110px 0 50px 0;*/
+padding: 2.0rem 0 0 0;
 }
 section.gallaryarea h2 p{
 /*display:inline-block;
@@ -1800,12 +1810,14 @@ background-size:auto auto;
 background-repeat: no-repeat;*/
 }
 section.gallaryarea h3{
-/*padding: 30px 0 50px 0;*/
-line-height:1.4;/*�s�̍���*/
-font-size:1.5rem;
-/*letter-spacing: 2px;*/
-font-family: "Hiragino Maru Gothic ProN";
-}
+	padding: 1.2rem 0 1.5rem 0;
+  line-height: 1.4;
+  text-align: center;
+  font-size: 1.0rem;
+  letter-spacing: 0.1rem;
+  /* letter-spacing: 2px; */
+  font-family: "Hiragino Maru Gothic ProN";
+	}
 section.gallaryarea h3 p{
 }
 #container {
@@ -1823,23 +1835,23 @@ section.gallaryarea h3 p{
 	clear: both;
 	float: left;
 	width: 100%;
-	margin-bottom: 40px;
+	/*margin-bottom: 40px;*/
 }
 .category_title {
 	clear: both;
 	float: left;
 	width: 100%;
 	text-align: center !important;
-	margin-bottom: 10px;
-	font-size: 20px;
+	margin-bottom: 0.5rem;
+	font-size: 1.0rem;
 	letter-spacing: 0.1em;
 	font-family: 'Droid Serif', serif;
 }
 .imageAll {
 	clear: both;
-	padding: 8px 8px 50px 8px;
-	overflow: hidden;
-	font-size: 0px;
+  padding: 0.1rem 0.3rem 1.5rem 0.3rem;
+  overflow: hidden;
+  font-size: 0;
 }
 .imageBox_unit {
 	* IE 6/7 */
@@ -1915,16 +1927,16 @@ margin: 0 auto 0 auto;
 font-size: 10px;
 }*/
 section.gallaryarea div.myfooter{
-		clear: both;
+	clear: both;
  text-align: center;
  border-style: solid;
- border-width: 1px 0 0 0;
+ border-width: 0.03rem 0 0 0;
  border-color: #cccccc;
  }
 
 section.gallaryarea div.myfooter p{
- padding: 0.782rem 0 0.782rem 0;
- font-size: 0.678rem;
+ padding: 0.8rem 0 0.8rem 0;
+ font-size: 0.68rem;
  }
 
 
