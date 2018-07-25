@@ -1258,11 +1258,12 @@ section.keyvisualarea{
 section.keyvisualarea>div.inner{
 }
 section.keyvisualarea div.bg{
-height: 30rem;
-/*background-image:url(image/sp/photo_keyvisual_01.jpg);
-background-repeat: no-repeat;
-background-position:0 0;
-background-size:100% auto;*/
+	height: 100vh;
+  /* min-height: 100%; */
+  background-image: url(image/sp/photo_keyvisual_01.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 /*section.keyvisualarea div.bg p.obj{
@@ -1290,21 +1291,25 @@ height: 8.292rem;
    background-image:url(image/sp/object_keyvisualpart_01.png);
 }*/
 section.keyvisualarea div.bg ul{
-	height:100%;
+	display:none;
 }
-section.keyvisualarea div.bg ul li {
+/*section.keyvisualarea div.bg ul li {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	/*top: -3%;
 	right: 0;
 	bottom: 0;
-	left: 0;*/
+	left: 0;
 	display:block;
 }
+
 section.keyvisualarea div.bg ul li:nth-child(2) {
 	display:none;
 }
+section.keyvisualarea div.bg ul li img.pc-only{
+	display:none;
+}*/
 /*section.keyvisualarea div.bg ul li.active {
 	-webkit-animation: zoomOut 9.5s linear, fadeIn 1s linear;
 	animation: zoomOut 9.5s linear, fadeIn 1s linear;
@@ -1338,13 +1343,13 @@ section.keyvisualarea div.bg ul li:nth-child(2) {
 		transform: scale(1);
 	}
 }*/
-section.keyvisualarea div.bg ul li img {
+/*section.keyvisualarea div.bg ul li img {
 	height: auto;
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	max-width: inherit!important;
-}
+}*/
 
 section.keyvisualarea div.copy {
 	position: absolute;
@@ -1353,10 +1358,10 @@ section.keyvisualarea div.copy {
   left: 0;
   right: 0;
   margin: 0 auto;
-  margin-top: 4rem;
+  margin-top: 25vh;
   /* width: 20%; */
   /*max-width: 300px;*/
-  height: 100%;
+  /*height: 100%;*/
 }
 section.keyvisualarea div.copy h1{
     font-size: 0;
@@ -1366,7 +1371,7 @@ section.keyvisualarea div.copy svg {
     left: 0;
     top: 0;
     width: 100%;
-    height: 20rem;
+    height: 40vh;
     /*background-image: url(image/pc/text_keyvisual_copy_01.png);
     background-repeat: no-repeat;
     background-position: 0 100%;
@@ -1383,7 +1388,7 @@ animation: pop ease-out 3s forwards;
 .cls-1, .cls-2, .cls-3 {
 	fill: #fff;
 	text-anchor: middle;
-	font-family: HeiseiMaruGoStd-W4, "Heisei Maru Gothic Std";
+	font-family: "Hiragino Maru Gothic ProN";/*HeiseiMaruGoStd-W4, "Heisei Maru Gothic Std";*/
 }
 .cls-2 {
 	font-size: 38px;
