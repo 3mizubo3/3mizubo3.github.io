@@ -482,6 +482,7 @@ section.keyvisualarea div.copy {
   /* width: 20%; */
   max-width: 300px;
   height: 30vw;
+		z-index:1;
 }
 section.keyvisualarea div.copy h1{
     font-size: 0;
@@ -1201,6 +1202,7 @@ transition-duration:0.5s;
 
 nav.capnavi menu.appear{
 right:0;
+width:100%;
 }
 /*---*/
 nav.capnavi menu div.edge{

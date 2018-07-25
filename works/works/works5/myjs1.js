@@ -178,7 +178,7 @@ if(U.narrow){
     });
 
     //finish
-    $("html").animate({opacity:1}, 1000*2, "linear");
+    $("html").animate({opacity:1}, 1000*4, "linear");
   });
 
 //[[pc]]
