@@ -1381,8 +1381,8 @@ section.keyvisualarea div.copy svg {
     background-size: 100% auto;*/
 }
 .st1 {
--webkit-animation: pop ease-out 3s forwards;
-animation: pop ease-out 3s forwards;
+-webkit-animation: pop ease-out 5s forwards;
+animation: pop ease-out 5s forwards;
 }
 /*svg*/
 .cls-1 {
