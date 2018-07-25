@@ -1146,17 +1146,27 @@ nav.capnavi div.below div.mark span{
 	height:1.564rem;
 	 background-image:url(image/sp/logo_anahawaii_01.png);
 }*/
-nav.capnavi div.below div.sns{
-	position:absolute;
-	left:9.5rem;
-	top:0.8rem;
-}
 
+nav.capnavi div.below div.sns{
+	/*position:absolute;
+	left:10.0rem;
+	top:0.8rem;*/
+   position: fixed;
+  /* left: 10.0rem; */
+  /* top: 0.8rem; */
+  bottom: 1.8rem;
+  right: 0.8rem;
+
+}
 nav.capnavi div.below div.sns a{
 width:1.5rem;
 height:1.5rem;
+font-size:1.5rem;
+color:#c3c3c3;
+margin: 0 0 0 1.2rem;
 }
-nav.capnavi div.below div.sns a.tw{
+
+/*nav.capnavi div.below div.sns a.tw{
 	background-image:url(image/sp/icon_navi_sns_tw_01.png);
 }
 nav.capnavi div.below div.sns a.fb{
@@ -1164,15 +1174,15 @@ nav.capnavi div.below div.sns a.fb{
 }
 nav.capnavi div.below div.sns a.gp{
 	background-image:url(image/sp/icon_navi_sns_gp_01.png);
-}
+}*/
 
 nav.capnavi div.below div.menuopen{
-position:absolute; right:0; top:0.9rem;
+position:absolute; right:0.5rem; top:0.9rem;
 }
 
 nav.capnavi div.below div.menuopen label{
-	width: 3.9rem;
-	height: 1.6rem;
+	width: 3.5rem;
+	height: 3.5rem;
 	background-image:url(image/sp/icon_navi_hamburger_01.png);
 }
 /*---------*/
@@ -1198,7 +1208,7 @@ position:relative;
 height:3.0rem;
 }
 
-nav.capnavi menu div.edge label.xbtn{
+nav.capnavi menu div.edge label{
 position:absolute;
 right:0;
 top:0;
@@ -1208,7 +1218,7 @@ font-size:0;
 background-image:url(image/sp/icon_x_01.png);
 background-repeat: no-repeat;
 background-position:0 0;
-background-site:100% auto;
+background-size:100% auto;
 }
 /*----*/
 nav.capnavi menu ul{
@@ -1226,7 +1236,7 @@ width:9.0rem;
 height:3.4rem;
 font-size:0;
 vertical-align:top;
-background-image: url(image/sp/object_titleedge_white_01.png);
+background-image:url(image/sp/object_titleedge_white_01.png);
 background-repeat:no-repeat;
 background-position:0 0 ;
 background-size:100%;
