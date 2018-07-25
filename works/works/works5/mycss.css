@@ -6,6 +6,9 @@
 .sp{
   display: none;
 }
+.sp-br{
+  display: none;
+}
 html{
 font-size: 14px;
 opacity: 0;
@@ -1407,19 +1410,19 @@ opacity: 1;
 }
 }
 
-/*������������������MOVIE������������������*/
+/*������������������INTRODUCTION������������������*/
 section.introarea{
 background-color:#fffbea;
 }
 section.introarea>div.inner{
-padding: 0 0 2.0rem 0;
+padding: 0 0.8rem 2.0rem 0.8rem;
 color:#333333;
 text-align: center;
 }
 
 /*-----*/
 section.introarea h2{
-padding:3.4rem 0 1.8rem 0;
+padding: 4.0em 0 4.0rem 0;
 }
 
 section.introarea h2 p{
@@ -1439,19 +1442,22 @@ section.introarea h3{
 padding: 1.0rem 0 1.0rem 0;
 }
 section.introarea h3 p{
-	font-size: 0.6em;
+	font-size: 0.8em;
 	letter-spacing: 0.2rem;
 }
 section.introarea p{
 	line-height: 1.7;
 	letter-spacing: 0.1rem;
-	font-size: 0.6rem;
+	font-size: 1.0rem;
 }
 section.introarea h3+p{
-padding: 0.8rem 0 0.8rem 0;
+padding: 2.5rem 0 2.3rem 0;
 }
+/*section.introarea h3+p span{
+padding: 0 0.8rem 0 0.8rem;
+}*/
 section.introarea div.introimage{
-	margin: 5rem auto 0 auto;
+	margin: 10rem auto 0 auto;
   width: 20rem;
   /* width: 500px; */
   height: 15rem;
