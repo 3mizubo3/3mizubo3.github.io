@@ -43,7 +43,7 @@ var Util = function(){ var THIS=this;
 	  }
 	  return false;
 	};
-	/*this.sprintf = function(str, prm){ var THIS=this;//よくわからない関数
+	/*this.sprintf = function(str, prm){ var THIS=this;
 	  for(var i=0,imax=prm.length; i<imax; i++){ var l=prm[i];
 	    str = str.replace(new RegExp("{%}"), l);//正規表現
 	  }
