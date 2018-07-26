@@ -36,7 +36,9 @@ outline: none;
 label{
 cursor: pointer;
 }
-
+.shadow {
+  box-shadow: 3px 3px 20px rgba(0,0,0,0.25);
+}
 /*--��������������������������NAVI for PC��������������������������--*/
 /*----*/
 nav.fixnavi{
@@ -48,14 +50,6 @@ nav.fixnavi div.bar{
  transition-duration: 1s;
 }
 
-/*nav.fixnavi div.bar a,
-nav.fixnavi div.bar label,
-nav.fixnavi div.bar span{
-font-size:0;
-background-repeat:no-repeat;
-background-position:0 0;
-background-size: auto auto;
-}*/
 /*snsのbar*/
 nav.fixnavi div.bar.newse{
 right: 0;
@@ -89,24 +83,7 @@ nav.fixnavi div.bar.newse div.snsbox a{
 nav.fixnavi div.bar.newse div.snsbox a:hover{
 opacity:0.3;
 }
-/*nav.fixnavi div.bar.newse div.snsbox a.tw{
-/*background-image:url(image/pc/icon_navi_sns_tw_01.png);
-background-repeat:no-repeat;
-background-position:0 0;
-background-size: auto auto;
-}
-nav.fixnavi div.bar.newse div.snsbox a.fb{
-background-image:url(image/pc/icon_navi_sns_fb_01.png);
-background-repeat:no-repeat;
-background-position:0 0;
-background-size: auto auto;
-}
-nav.fixnavi div.bar.newse div.snsbox a.gp{
-background-image:url(image/pc/icon_navi_sns_gp_01.png);
-background-repeat:no-repeat;
-background-position:0 0;
-background-size: auto auto;
-}*/
+
 /*----*/
 /*snsのbar*/
 nav.fixnavi div.bar.newss{
@@ -140,18 +117,7 @@ background-position:0 0;
 background-size: auto auto;
 margin: 0 0 0 -30px;
 }
-/*nav.fixnavi div.bar.newss span.logo{
-position: absolute;
-right: 40px;
-top:20px;
-width:245px;
-height:60px;
-font-size:0;
-background-image:url(image/pc/logo_anahawaii_01.png);
-background-repeat:no-repeat;
-background-position:0 0;
-background-size: auto auto;
-}*/
+
 /*----*/
 nav.fixnavi div.bar.newsw{
 top:0;
@@ -211,31 +177,7 @@ top:0;
 left:0;
 opacity:0;
 }
-/*nav.fixnavi div.bar.newsn a.logo{
-position:absolute;
-width: 239px;
-height:68px;
-top:16px;
-left:20px;
-background-image:url(image/pc/logo_enterprise_01.png);
-font-size:0;
-background-repeat:no-repeat;
-background-position:0 0;
-background-size: auto auto;
-}
-nav.fixnavi div.bar.newsn span.mark{
-position:absolute;
-width: 60px;
-height:60px;
-top:20px;
-left:50%;
-margin: 0 0 0 -30px;
-background-image:url(image/pc/icon_navi_exclamation_a_01.png);
-font-size:0;
-background-repeat:no-repeat;
-background-position:0 0;
-background-size: auto auto;
-}*/
+
 nav.fixnavi div.bar.newsn label.menuopen{
 position:absolute;
 width: 80px;
@@ -277,7 +219,7 @@ background-color: none;
 top:60px;
 }
 #wrap[my_phase="2"]{
-background-color: #fff3c1;/*#ffe882;*/
+background-color: #fff3c1;
 }
 
 #wrap[my_phase="2"] nav.fixnavi div.bar{
@@ -385,12 +327,6 @@ section.keyvisualarea div.bg{
 	overflow: hidden;
 	/*padding: 100px 100px 0 100px;*/
 
-/*width:auto;
-height:auto;
-background-image:url(image/pc/photo_keyvisual_01.jpg);
-background-repeat:no-repeat;
-background-position: auto 0;
-background-size: 100% auto;*/
 }
 section.keyvisualarea div.bg ul{
 	height:100%;
@@ -449,27 +385,6 @@ section.keyvisualarea div.bg ul li img {
 	max-width: inherit!important;
 
 }
-/*section.keyvisualarea div.bg p.obj{
-position:absolute;
-left: 140px;
-bottom: 30px;
-width:17.5%;
-max-width: 221px;
-height:100%;
-}*/
-
-/*section.keyvisualarea div.bg p.obj>span{
-position: absolute;
-left:0;
-top:0;
-width:100%;
-height:100%;
-font-size:0;
-/*background-image:url(image/pc/object_keyvisualpart_01.png);
-background-size:100% auto;
-background-position: 0 100%;
-background-repeat:no-repeat;
-}*/
 
 section.keyvisualarea div.copy {
 	position: absolute;
@@ -479,7 +394,6 @@ section.keyvisualarea div.copy {
   right: 0;
   margin: 0 auto;
   margin-top: 12vw;
-  /* width: 20%; */
   max-width: 300px;
   height: 30vw;
 		z-index:1;
@@ -493,10 +407,6 @@ section.keyvisualarea div.copy svg {
     top: 0;
     width: 100%;
     height: 100%;
-    /*background-image: url(image/pc/text_keyvisual_copy_01.png);
-    background-repeat: no-repeat;
-    background-position: 0 100%;
-    background-size: 100% auto;*/
 }
 .st1 {
 -webkit-animation: pop ease-out 3s forwards;
@@ -528,9 +438,7 @@ opacity: 1;
 }
 }
 
-
-
-/*--��������������������������MOVIE��������������������������--*/
+/*--��������������������������INTRODUCTION��������������������������--*/
 section.introarea{
 }
 section.introarea > div.inner{
@@ -542,17 +450,8 @@ section.introarea h2{
 padding: 110px 0 50px 0;
 }
 section.introarea h2 p{
-/*display:inline-block;
-position:relative;*/
 font-size:0px;
-
-/*width:212px;
-height:82px;*/
 vertical-align:top;
-/*background-image:url(image/pc/object_titleedge_sky_01.png);
-background-position:0 0;
-background-size:auto auto;
-background-repeat: no-repeat;*/
 }
 section.introarea h3{
 padding: 30px 0 50px 0;
@@ -571,14 +470,6 @@ padding: 20px 0 20px 0;
 }
 section.introarea div.introimage{
 margin:200px auto 0 auto;
-/*section.infoarea div.infobox div.itemphoto{
-position:absolute;
-top:0;
-left:0;
-}*/
-/*position:absolute;*/
-/*left:0;
-top:0;*/
 width:500px;
 height:314px;
 border-radius: 7px;
@@ -587,35 +478,9 @@ background-repeat: no-repeat;
 background-position: 0 0;
 background-size:auto auto;
 }
-/*section.introarea h2 p span{
-position:absolute;
-left:0;
-top:0;
-width:100%;
-height:100%;*/
-/*background-image:url(image/pc/text_title_movie_01.png);
-background-repeat: no-repeat;
-background-position: 0 0;
-background-size:auto auto;*/
-/*section.introarea div.moviebox{
-width: 900px;
-margin: 0 auto 0 auto;
-}
-section.introarea div.moviebox p.caption{
-padding: 0 0 10 0;
-color: #389ad6;
-}
-section.introarea div.moviebox div.movie{
 
-}
-section.introarea div.moviebox div.movie video{
-width:100%;
-max-width:900px;
-height:480px;
-vertical-align:top;
-}*/
 
-/*--��������������������������SPOT��������������������������--*/
+/*--��������������������������INFORMATION��������������������������--*/
 section.infoarea{
 }
 section.infoarea>div.inner{
@@ -625,31 +490,10 @@ overflow: hidden;
 }
 section.infoarea h2{
 	padding: 110px 0 50px 0;
-/*text-align:center;*/
 }
 section.infoarea h2 p{
-/*position:relative;
-display:inline-block;*/
-/*width:212px;
-height:82px;*/
 font-size:0px;
-/*vertical-align:top;*/
-/*background-image:url(image/pc/object_titleedge_white_01.png);
-background-repeat: no-repeat;
-background-position: 0 0;
-background-size:auto auto;*/
 }
-/*section.infoarea h2 p span{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background-image:url(image/pc/text_title_movie_01.png);
-background-repeat: no-repeat;
-background-position: 0 0;
-background-size:auto auto;
-}*/
 section.infoarea div.infobox{
 width:1060px;
 padding: 0 80px 0px 80px;
@@ -657,17 +501,6 @@ background-color:none; /*#fff;*/
 color: #333333;
 margin: 0 auto 0 auto;
 }
-/*section.infoarea div.infobox div.intro{
-position:relative;
-}
-section.infoarea div.infobox div.intro h3{
-/*text-align:center;
-padding: 55px 0 55px 0;
-}*/
-/*section.infoarea div.infobox div.intro h3 p{
-font-size:0px;
-letter-spacing:1px;
-}*/
 section.infoarea div.infobox div.itembox{
 position:relative;
 height:360px;
@@ -689,37 +522,6 @@ background-repeat: no-repeat;
 background-position: 0 0;
 background-size:auto auto;
 }
-/*section.infoarea div.infobox div.intro div.itemphoto p.ballon{
-position:absolute;
-left:-35px;
-top:-110px;
-width:204px;
-height:204px;
-background-image:url(image/pc/object_balloon_01.png);
-background-repeat: no-repeat;
-background-position: 0 0;
-background-size:auto auto;
-}
-section.infoarea div.infobox div.intro div.itemphoto p.ballon span{
-position:absolute;
-left:25px;
-top:30px;
-width:160px;
-padding:42px 0 0 0;
-line-height:1.5;
-font-size: 12px;
-color: #ffffff;
-}
-section.infoarea div.infobox div.intro div.itemphoto p.ballon span em{
-position:absolute;
-left:0;
-top:0;
-width:100%;
-text-align:center;
-line-height:1.3;
-font-size:15px;
-font-weight:bold;
-}*/
 section.infoarea div.infobox div.caption{
 position:absolute;
 top:50px;
@@ -728,8 +530,6 @@ width:340px;
 color:#333333;
 letter-spacing: 3px;
 }
-/*section.infoarea div.infobox div.intro div.caption dl{
-}*/
 section.infoarea div.infobox div.caption h3{
 padding: 0 0 30px 0;
 line-height:1.4;/*�s�̍���*/
@@ -741,22 +541,6 @@ section.infoarea div.infobox div.caption p{
 font-size:13px;
 line-height:1.7;
 }
-/*section.infoarea div.infobox div.intro div.figure{
-position:absolute;
-top:0;
-left:760px;
-}
-section.infoarea div.infobox div.intro div.figure p{
-position:absolute;
-top:0;
-left:0;
-width:180px;
-height:180px;
-background-image:url(image/pc/photo_spot_subimage_01.jpg);
-background-repeat: no-repeat;
-background-position: 0 0;
-background-size:auto auto;
-}*/
 
 section.infoarea div.infobox div.access{
 	position: relative;
@@ -777,22 +561,7 @@ line-height:45px;
 /*padding: 0 0 0 280px;*/
 font-size:18px;
 letter-spacing: 3px;
-/*border-style:solid;
-border-width:0 0 2px 0;
-border-color:#57b5ed;*/
 }
-/*section.infoarea div.infobox div.access h3 p span{
-position:absolute;
-left:0;
-top:0;
-width:258px;
-height:51px;
-font-size:0;
-background-image:url(image/pc/object_access_01.png);
-background-repeat: no-repeat;
-background-position: 0 0;
-background-size:auto auto;
-}*/
 section.infoarea div.infobox div.access div.note{
 padding: 0 270px 0 0;
 line-height: 1.7;
@@ -833,18 +602,13 @@ section.infoarea div.infobox div.more{
 position:relative;
 padding-top:70px;
 height:250px;
-/*border-style:solid; border-width:2px; border-color:#57b5ed;*/
 }
 section.infoarea div.infobox div.more div.fig{
 position:absolute;
 left:0;
 top:70px;
-/*section.infoarea div.infobox div.more div.map a*/
 width:600px;
 height:200px;
-/*position:absolute;
-left:0;
-top:0;*/
 border-radius: 7px;
 background-image:url(image/pc/photo_spot_mainimage_02.png);
 background-repeat: no-repeat;
@@ -876,9 +640,6 @@ line-height:45px;
 padding: 0;
 font-size:18px;
 letter-spacing: 3px;
-/*border-style:solid;
-border-width:0 0 2px 0;
-border-color:#57b5ed;*/
 }
 section.infoarea div.infobox div.more div.note p{
 
@@ -888,25 +649,7 @@ color:  #333333;;
 }
 
 
-/*section.infoarea div.infobox div.more div.banner{
-}
-section.infoarea div.infobox div.more div.banner a{
-display:inline-block;
-width:900px;
-height:180px;
-font-size:0;
-background-image:url(image/pc/banner_hawaii24_01.png);
-background-repeat: no-repeat;
-background-position: 0 0;
-background-size:auto auto;
-transition-property:opacity;
-transition-duration:1s;
-}
-section.infoarea div.infobox div.more div.banner a:hover{
-opacity:0.5;
-}*/
-
-/*--��������������������������Banner&Booking&Footer��������������������������--*/
+/*--��������������������������GALLARY&Footer��������������������������--*/
 section.gallaryarea{
 }
 section.gallaryarea > div.inner{
@@ -917,16 +660,7 @@ section.gallaryarea h2{
 padding: 110px 0 50px 0;
 }
 section.gallaryarea h2 p{
-/*display:inline-block;
-position:relative;*/
 font-size:0px;
-/*width:212px;
-height:82px;*/
-/*vertical-align:top;*/
-/*background-image:url(image/pc/object_titleedge_sky_01.png);
-background-position:0 0;
-background-size:auto auto;
-background-repeat: no-repeat;*/
 }
 section.gallaryarea h3{
 padding: 30px 0 50px 0;
@@ -937,45 +671,7 @@ font-family: "Hiragino Maru Gothic ProN";
 }
 section.gallaryarea h3 p{
 }
-/*section.gallaryarea{
 
-}
-section.gallaryarea>div.inner{
-position:static;
-padding: 0 0 100px 0;
-}
-section.gallaryarea div.bannerbox{
-width:900px;
-padding:50px 0 80px 0;
-margin:0 auto 0 auto;
-}
-section.gallaryarea div.bannerbox p.caption{
-padding: 0 0 10px 0;
-font-size: 12px;
-color: #57b5ed;
-letter-spacing:3px;
-}
-section.gallaryarea div.bannerbox p.banner a{
-display:inline-block;
-width:900px;
-height:180px;;
-font-size:0;
-vertical-align:top;
-background-image:url(image/pc/banner_a380_01.png);
-background-repeat: no-repeat;
-background-position: 0 0;
-background-size:auto auto;
-transition-property: opacity;
-transition-duration: 1s;
-}
-section.gallaryarea div.bannerbox p.banner a:hover{
-opacity:0.5;
-}
-section.gallaryarea div.formbox{
-width:900px;
-padding:0 0 80px 0;
-margin: 0 auto 0 auto;
-}*/
 /*ギャラリー*/
 section.gallaryarea div#container {
 	max-width: 900px;
@@ -988,15 +684,7 @@ section.gallaryarea div#container div.main_area {
 	float: left;
 	margin-bottom: 10px;
 }
-/*.category_title {
-	clear: both;
-	float: left;
-	width: 100%;
-	text-align: center;
-	margin-bottom: 30px;
-	font-size: 28px;
-	letter-spacing: 0.1em;
-}*/
+
 section.gallaryarea div#container div.main_area div.imageAll{
 	clear: both;
 	padding: 8px 8px 50px 10px;
@@ -1093,7 +781,9 @@ section{}
 section>div.inner{
 	position:relative;
 }
-
+.shadow {
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0,0,0,0.25);
+}
 
 /*������������������navi for SP������������������*/
 nav.capnavi{
@@ -1116,45 +806,8 @@ nav.capnavi span{
 	background-size: 100% auto;
 }
 /*----*/
-/*nav.capnavi div.adove{
-	height:0;
-	background-color:#2b4bb6;
-	transition-duration: 0.4s;
-}
-
-nav.capnavi div.adove.appear{
-	height: 2.607rem;
-}
-
-nav.capnavi div.adove div.logo{
-	height:100%;
-}
-nav.capnavi div.adove div.logo a{
-	background-image: url(image/sp/logo_enterprise_01.png);
-	width:100%;
-	height:100%;
-}
-
-nav.capnavi div.adove.appear div.logo a{
-	height: 2.607rem;
-}
-/*---------*/
-/*nav.capnavi div.below div.mark{
-	position: absolute; left:0; top:1.043rem;
-}
-nav.capnavi div.below div.mark span{
-	width:7.431rem;
-	height:1.564rem;
-	 background-image:url(image/sp/logo_anahawaii_01.png);
-}*/
-
 nav.capnavi div.below div.sns{
-	/*position:absolute;
-	left:10.0rem;
-	top:0.8rem;*/
    position: fixed;
-  /* left: 10.0rem; */
-  /* top: 0.8rem; */
   bottom: 1.8rem;
   right: 0.8rem;
 
@@ -1166,16 +819,6 @@ font-size:1.5rem;
 color:#c3c3c3;
 margin: 0 0 0 1.2rem;
 }
-
-/*nav.capnavi div.below div.sns a.tw{
-	background-image:url(image/sp/icon_navi_sns_tw_01.png);
-}
-nav.capnavi div.below div.sns a.fb{
-	background-image:url(image/sp/icon_navi_sns_fb_01.png);
-}
-nav.capnavi div.below div.sns a.gp{
-	background-image:url(image/sp/icon_navi_sns_gp_01.png);
-}*/
 
 nav.capnavi div.below div.menuopen{
 position:absolute; right:0.5rem; top:0.9rem;
@@ -1193,10 +836,7 @@ right:-100%;
 top:0;
 height:auto;/*by javascript*/
 overflow:auto;
-background-color:rgba(56,154,214,0.95);
-/*border-style:solid;
-border-width:0 0 1px 0;
-border-color:#fff;*/
+background-color:#d6b437bf;
 transition-duration:0.5s;
 }
 
@@ -1212,8 +852,8 @@ height:3.0rem;
 
 nav.capnavi menu div.edge label{
 position:absolute;
-right:0;
-top:0;
+right: 2.0rem;
+top: 1.0rem;
 width:3.0rem;
 height:3.0rem;
 font-size:0;
@@ -1238,10 +878,6 @@ width:9.0rem;
 height:3.4rem;
 font-size:0;
 vertical-align:top;
-background-image:url(image/sp/object_titleedge_white_01.png);
-background-repeat:no-repeat;
-background-position:0 0 ;
-background-size:100%;
 }
 nav.capnavi menu ul>li label span{
 position:absolute;
@@ -1281,90 +917,9 @@ section.keyvisualarea div.bg{
   background-size: cover;
 }
 
-/*section.keyvisualarea div.bg p.obj{
-position:absolute;
-}*/
-
-/*section.keyvisualarea div.bg p.obj>span{
-display:block;
-position:ralative;
-width:100%;
-height:100%;
-font-size:0;
-background-repeat: no-repeat;
-background-position:0 0;
-background-size:100% auto;
-}*/
-
-/*section.keyvisualarea div.bg p.obj:nth-of-type(1){
-left: 0.939rem;
-top: 10.169rem;
-width: 4.908rem;
-height: 8.292rem;
-}*/
-/*section.keyvisualarea div.bg p.obj:nth-of-type(1)>span{
-   background-image:url(image/sp/object_keyvisualpart_01.png);
-}*/
 section.keyvisualarea div.bg ul{
 	display:none;
 }
-/*section.keyvisualarea div.bg ul li {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	/*top: -3%;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	display:block;
-}
-
-section.keyvisualarea div.bg ul li:nth-child(2) {
-	display:none;
-}
-section.keyvisualarea div.bg ul li img.pc-only{
-	display:none;
-}*/
-/*section.keyvisualarea div.bg ul li.active {
-	-webkit-animation: zoomOut 9.5s linear, fadeIn 1s linear;
-	animation: zoomOut 9.5s linear, fadeIn 1s linear;
-	z-index: 1;
-}*/
-/*@keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-@keyframes zoomOut {
-	0% {
-		-webkit-transform: scale(1.1);
-		-ms-transform: scale(1.1);
-		-o-transform: scale(1.1);
-		transform: scale(1.1);
-	}
-	85% {
-		-webkit-transform: scale(1);
-		-ms-transform: scale(1);
-		-o-transform: scale(1);
-		transform: scale(1);
-	}
-	100% {
-		-webkit-transform: scale(1);
-		-ms-transform: scale(1);
-		-o-transform: scale(1);
-		transform: scale(1);
-	}
-}*/
-/*section.keyvisualarea div.bg ul li img {
-	height: auto;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	max-width: inherit!important;
-}*/
 
 section.keyvisualarea div.copy {
 	position: absolute;
@@ -1374,9 +929,6 @@ section.keyvisualarea div.copy {
   right: 0;
   margin: 0 auto;
   margin-top: 25vh;
-  /* width: 20%; */
-  /*max-width: 300px;*/
-  /*height: 100%;*/
 }
 section.keyvisualarea div.copy h1{
     font-size: 0;
@@ -1387,10 +939,6 @@ section.keyvisualarea div.copy svg {
     top: 0;
     width: 100%;
     height: 40vh;
-    /*background-image: url(image/pc/text_keyvisual_copy_01.png);
-    background-repeat: no-repeat;
-    background-position: 0 100%;
-    background-size: 100% auto;*/
 }
 .st1 {
 -webkit-animation: pop ease-out 5s forwards;
@@ -1439,16 +987,6 @@ padding: 4.0em 0 4.0rem 0;
 
 section.introarea h2 p{
 font-size: 0;
-/*display: inline-block;
-position:relative;
-width:8.996rem;
-height:3.416rem;
-
-vertical-align:top;
-background-image: url(image/sp/object_titleedge_sky_01.png);
-background-repeat:no-repeat;
-background-position:0 0;
-background-size: 100% auto;*/
 }
 section.introarea h3{
 padding: 1.0rem 0 1.0rem 0;
@@ -1465,49 +1003,15 @@ section.introarea p{
 section.introarea h3+p{
 padding: 2.5rem 0 2.3rem 0;
 }
-/*section.introarea h3+p span{
-padding: 0 0.8rem 0 0.8rem;
-}*/
 section.introarea div.introimage{
 	margin: 10rem auto 0 auto;
-  /*width: 20rem;*/
-  /* width: 500px; */
-  height: 15rem;
+  height: 12rem;
   /* border-radius: 7px; */
-  background-image: url(image/pc/photo_intro_mainimage_01.jpg);
+  background-image: url(image/sp/photo_intro_mainimage_01.jpg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: auto auto;
+  background-size: 100% auto;
 }
-/*section.introarea h2 p span{
- position: absolute;
- left:0;
- top:0;
- width:100%;
- height:100%;
-background-image: url(image/sp/text_title_movie_01.png);
-background-repeat:no-repeat;
-background-position:0 0;
-background-size: 100% auto;
-}
-
-/*----*/
-/*section.introarea div.moviebox{
-width: 18.252rem;
-margin: 0 auto 0 auto;
-}
-section.introarea div.moviebox p.caption{
-padding: 0 0 0.512rem 0;
-font-size:0.652rem;
-color:#389ad6;
-}
-section.introarea div.moviebox div.movie{
-}
-section.introarea div.moviebox div.movie iframe{
-width: 100%;
-height: 14.602rem;
-vertical-align: top;
-}*/
 
 /*������������������INFOMATION������������������*/
 section.infoarea{
@@ -1520,28 +1024,8 @@ section.infoarea h2{
  padding: 2.5rem 0 0.5rem 0;
 }
 section.infoarea h2 p{
-/*display: inline-block;
-position: relative;
-width: 8.996rem;
-height: 3.416rem;*/
 font-size: 0;
-/*vertical-align: top;
-background-image:url(image/sp/object_titleedge_white_01.png);
-background-repeat:no-repeat;
-background-position:0 0;
-background-size: 100% auto;*/
 }
-/*section.infoarea h2 p span{
-position: absolute;
-left:0;
-top:0;
-width:100%;
-height:100%;
-background-image:url(image/sp/text_title_spot_01.png);
-background-repeat:no-repeat;
-background-position:0 0;
-background-size: 100% auto;
-}*/
 
 section.infoarea div.infobox{
 width: 18.25rem;
@@ -1553,15 +1037,6 @@ margin: 0 auto 0 auto;
 section.infoarea div.infobox div.itembox{
 position: relative;
 }
-/*section.infoarea div.infobox div.intro h3{
-padding: 2.868rem 0 2.738rem 0;
-text-align:center;
-}
-
-section.infoarea div.infobox div.intro h3 p{
-font-size:0.943rem;
-whit-space: nowrap;
-}*/
 section.infoarea div.infobox div.itembox{
 position: relative;
 width: 16.0rem;
@@ -1577,43 +1052,11 @@ padding: 0 0 1.0rem 0;
 section.infoarea div.infobox div.itembox div.itemphoto p.photo{
 height:10.0rem;
 border-radius: 7px;
-background-image:url(image/pc/photo_spot_mainimage_01.jpg);
+background-image:url(image/sp/photo_spot_mainimage_01.jpg);
 background-repeat: no-repeat;
 background-position: 0 0;
 background-size: 100% auto;
 }
-/*section.infoarea div.infobox div.intro div.itemphoto p.photo{
-position:absolute;
-/*left: -2.607rem;
-top: -1.825rem;
-width:10.404rem;
-height:9.778rem;
-border-radius: 7px;
-background-image:url(image/pc/photo_spot_mainimage_01.jpg);
-background-repeat: no-repeat;
-background-position: 0 0;
-background-size: 100% auto;
-}*/
-/*section.infoarea div.infobox div.intro div.itembox div.itemphoto p.ballon span{
-position: absolute;
-left: 1.525rem;
-top: 1.647rem;
-width:7.219rem;
-padding: 2.200rem 0 0 0;
-line-height: 1.5;
-font-size: 0.574rem;
-color:#fff;
-}*/
-/*section.infoarea div.infobox div.intro div.itembox div.itemphoto p.ballon span em{
-position:absolute;
-left:0;
-top:0;
-width:100%;
-text-align:center;
-line-height:1.1;
-font-size: 0.874rem;
-font-weight:bold;
-}*/
 
 section.infoarea div.infobox div.caption{
 padding: 1.0rem 0 0 0;
@@ -1631,39 +1074,11 @@ section.infoarea div.infobox div.caption p{
 font-size:0.9rem;
 line-height:1.7;
 }
-/*section.infoarea div.infobox div.intro div.itembox div.caption dl{
-}
-section.infoarea div.infobox div.intro div.itembox div.caption dl>dt{
-padding: 0 0 0.391rem 0;
-line-height: 1.7;
-font-size: 0.730rem;
-}
-section.infoarea div.infobox div.intro div.itembox div.caption dl>dd{
-line-height: 1.5;
-font-size: 0.704rem;
-color:#333333;
-}*/
-
-/*section.infoarea div.infobox div.intro div.itembox div.figure{
-text-align: center;
-}
-
-section.infoarea div.infobox div.intro div.itembox div.figure p{
-display:inline-block;
-width: 11.734rem;
-height: 12.516rem;
-vertical-align: top;
-background-image:url(image/sp/photo_spot_subimage_01.jpg);
-background-repeat: no-repeat;background-position: 0 0;background-size: 100% auto;
-}*/
 
 section.infoarea div.infobox div.access{
 position: relative;
 width: 17.0rem;
   padding: 1.0rem 0.4rem 1.7rem 0.4rem;
-/*border-style: solid;
-border-width:2px;
-border-color:#57b5ed;*/
 margin: 0 auto 0 auto;
 }
 section.infoarea div.infobox  div.access h3{
@@ -1680,23 +1095,8 @@ section.infoarea div.infobox  div.access h3 p{
   font-size: 1.0rem;
 	letter-spacing: 0.1rem;
   white-space: nowrap;
-/*border-style: solid;
-border-width: 0 0 2px 0;
-border-color: #57b5ed;*/
 }
 
-/*section.infoarea div.infobox div.access h3 p span{
-position: absolute;
-left:0;
-top:0;
-width: 6.545rem;
-height: 1.721rem;
-font-size: 0;
-background-image:url(image/sp/object_access_01.png);
-background-repeat:no-repeat;
-background-position: 0 0;
-background-size: 100% auto;
-}*/
 section.infoarea div.infobox div.access div.note{
 padding: 0 0 1.2rem 0;
 line-height: 1.7;
@@ -1713,7 +1113,7 @@ section.infoarea div.infobox div.access div.map a{
   width: 14.0rem;
   height: 10.0rem;
   vertical-align: top;
-  background-image: url(image/pc/object_spot_map_01.png);
+  background-image: url(image/sp/object_spot_map_01.png);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100% auto;
@@ -1729,45 +1129,15 @@ section.infoarea div.infobox div.more h3{
 section.infoarea div.infobox div.more h3 p{
 display:inline-block;
 position:relative;
-/*width:650px;*/
-/*height:50px;*/
-/*line-height:45px;*/
 padding: 0;
 font-size:1.0rem;
 letter-spacing: 0.1rem;
-/*letter-spacing: 3px;*/
-/*border-style:solid;
-border-width:0 0 2px 0;
-border-color:#57b5ed;*/
-}
-section.infoarea div.infobox div.more div.fig{
-position:absolute;
-left:0;
-/*top:70px;
-/*section.infoarea div.infobox div.more div.map a*/
-width: 14.0rem;
-height: 14.0rem;
-/*position:absolute;
-left:0;
-top:0;*/
-border-radius: 7px;
-background-image:url(image/pc/photo_spot_mainimage_02.png);
-background-repeat: no-repeat;
-background-position: 0 0;
-background-size:auto auto;
-display:none;
-/*transition-property:opacity;
-transition-duration:1s;*/
 }
 
 section.infoarea div.infobox div.more div.note{
-  /* position: absolute; */
   padding: 0.7rem 0 0 1.4rem;
   line-height: 1.7;
-  /* letter-spacing: 3px; */
   font-size: 0.9rem;
-  /* left: 600px; */
-  /* top: 30px; */
 	}
 
 section.infoarea div.infobox div.more div.note p{
@@ -1777,28 +1147,7 @@ section.infoarea div.infobox div.more div.note p span{
 color:  #333333;;
 }
 
-/*section.infoarea div.infobox div.more h3{
-padding: 1.656rem 0 1.391rem 0;
-}
-section.infoarea div.infobox div.more h3 p{
-font-size: 0.678rem;
-}
-section.infoarea div.infobox div.more div.banner{
-text-align: center;
-}
-section.infoarea div.infobox div.more div.banner a{
-display: inline-block;
-width: 100%;
-height: 11.734rem;
-font-size: 0;
-vertical-align: top;
-background-image: url(image/sp/banner_hawaii24_01.png);
-background-repeat: no-repeat;
-background-position: 0 0;
-background-size: 100% auto;
-}*/
-
-/*������������������Banner&Booking&Footer������������������*/
+/*�����������������GALLARY&Foote�������������������*/
 section.gallaryarea{
 	background-color:#fffbea;
 }
@@ -1810,16 +1159,7 @@ section.gallaryarea h2{
 padding: 2.0rem 0 0 0;
 }
 section.gallaryarea h2 p{
-/*display:inline-block;
-position:relative;*/
 font-size:0px;
-/*width:212px;
-height:82px;*/
-/*vertical-align:top;*/
-/*background-image:url(image/pc/object_titleedge_sky_01.png);
-background-position:0 0;
-background-size:auto auto;
-background-repeat: no-repeat;*/
 }
 section.gallaryarea h3{
 	padding: 1.2rem 0 1.5rem 0;
@@ -1827,7 +1167,6 @@ section.gallaryarea h3{
   text-align: center;
   font-size: 1.0rem;
   letter-spacing: 0.1rem;
-  /* letter-spacing: 2px; */
   font-family: "Hiragino Maru Gothic ProN";
 	}
 section.gallaryarea h3 p{
@@ -1896,48 +1235,6 @@ section.gallaryarea h3 p{
 	width: auto;
 	border: none;
 }
-
-/*section.gallaryarea div.myfooter{
-	clear: both;
-text-align:center;
-border-style:solid;
-border-width: 1px 0 0 0;
-border-color:#cccccc;
-}
-section.gallaryarea div.myfooter p{
-padding: 30px 0 30px 0;
-font-size:12px;
-}*/
-/*
-section.gallaryarea div.bannerbox{
-width: 16.166rem;
-padding: 1.304rem 0 2.347rem 0;
-margin: 0 auto 0 auto;
-}
-section.gallaryarea div.bannerbox p.caption{
-padding: 0 0 0.391rem 0;
-font-size:0.678rem;
-color: #57b5ed;
-text-decoration: none;
-}
-
-section.gallaryarea div.bannerbox p.banner a{
-display: inline-block;
-width: 100%;
-height: 11.734rem;
-font-size: 0;
-vertical-align: top;
-background-image: url(image/sp/banner_a380_01.png);
-background-repeat: no-repeat;
-background-position: 0 0;
-background-size: 100% auto;
-}
-section.gallaryarea div.formbox{
-width: 18.252rem;
-padding: 0 0 2.086rem 0;
-margin: 0 auto 0 auto;
-font-size: 10px;
-}*/
 section.gallaryarea div.myfooter{
 	clear: both;
  text-align: center;
@@ -1950,6 +1247,5 @@ section.gallaryarea div.myfooter p{
  padding: 0.8rem 0 0.8rem 0;
  font-size: 0.68rem;
  }
-
 
 }

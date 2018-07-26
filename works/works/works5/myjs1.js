@@ -43,12 +43,12 @@ var Util = function(){ var THIS=this;
 	  }
 	  return false;
 	};
-	this.sprintf = function(str, prm){ var THIS=this;//よくわからない関数
+	/*this.sprintf = function(str, prm){ var THIS=this;//よくわからない関数
 	  for(var i=0,imax=prm.length; i<imax; i++){ var l=prm[i];
 	    str = str.replace(new RegExp("{%}"), l);//正規表現
 	  }
 	  return str;
-	};
+	};*/
 	this.scroll = function($e, dur, mgn, cb){
 		var THIS=this;
 		if(dur==null)dur=400;
@@ -133,12 +133,12 @@ U.mediaquery([800], function(zone){
 });
 
 //sns share link
-var mysiteurl = "https://www.ana.co.jp/ja/jp/hawaii24/ana_hawaii/";
+/*var mysiteurl = "https://www.";
 var shareurl  = {
   tw:U.sprintf("//twitter.com/share?url={%}", [mysiteurl]),
   fb:U.sprintf("//www.facebook.com/sharer/sharer.php?u={%}", [mysiteurl]),
   gp:U.sprintf("//plus.google.com/share?url={%}", [mysiteurl])
-};
+};*/
 
 //[[sp]]
 if(U.narrow){
@@ -148,10 +148,10 @@ if(U.narrow){
     var $mn = $nv.find("menu");
 
     //sns share link
-    $nv.find("div.sns a")
+    /*$nv.find("div.sns a")
       .eq(0).attr({href:shareurl.tw}).end()
       .eq(1).attr({href:shareurl.fb}).end()
-      .eq(2).attr({href:shareurl.gp});
+      .eq(2).attr({href:shareurl.gp});*/
 
     //navibar menu
     $(window).on("scroll.capnavi", function(){
@@ -204,10 +204,10 @@ if(U.narrow){
     var $mn = $nv.find("menu");
 
     //sns share link
-    $nv.find("div.bar.newse div.snsbox a")
+    /*$nv.find("div.bar.newse div.snsbox a")
       .eq(0).attr({href:shareurl.tw}).end()
       .eq(1).attr({href:shareurl.fb}).end()
-      .eq(2).attr({href:shareurl.gp});
+      .eq(2).attr({href:shareurl.gp});*/
 
     //phase color
     var currentphase = 0;
