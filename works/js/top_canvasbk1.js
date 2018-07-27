@@ -41,6 +41,7 @@ function init() {
  //renderer = new THREE.CanvasRenderer({ alpha: true } );
   // レンダラの大きさをウィンドウの幅と高さに設定
  renderer.setSize( window.innerWidth, window.innerHeight );
+ //renderer.setSize(canvas.clientWidth, canvas.clientHeight);
  // div要素をつくってHTMLのbody要素内に追加し、その中にコンテナがもつDOM要素を追加
  container.appendChild( renderer.domElement );
 
