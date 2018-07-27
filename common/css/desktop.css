@@ -140,6 +140,7 @@ div.topcontainer{
   text-align:center;
   width: 100%;
   display:block;
+  padding-top:10vh;
 }
 /*----------------SVG------------------*/
 div.topcontainer svg{
